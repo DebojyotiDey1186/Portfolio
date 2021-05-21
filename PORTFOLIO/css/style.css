@@ -1,0 +1,268 @@
+@import 'utilities.css';
+:root
+{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#ffff;
+    --text:#898989;
+    --light:#f2f2f2;
+}
+body
+{
+    font-family:'Poppins',sans-serif;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+header
+{
+    background-color: var(--dark);
+    height: 800px;
+    clip-path:polygon(0 0,100% 0,100% 90%,70% 70%,0 90%);
+}
+.container
+{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav .left a
+{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem ;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-trasition: all .3s;
+    -o-transition: all .3s;
+}
+header nav .left a:hover
+{
+    color:var(--primary);
+}
+header nav{
+    padding:2rem 0;
+}
+$b: 2rem;
+.hero .left img
+{
+    
+    margin-left: 15rem;
+    width: 450px;
+    height: 450px;
+}
+.hero .right
+{
+    color: white;
+}
+.hero .right h6
+{
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom:0.5rem;
+}
+.hero .right h1{
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+.hero .right h6{
+    color: var(--primary);
+    font-size: 3em;
+}
+.hero .right p
+{
+    line-height: 1.9;
+    margin-bottom: 2em;
+    font-size: 0.8em;
+}
+section
+{
+    padding: 6em 0;  
+}
+section.about .aboutmeimg
+{
+    height:400px;
+    margin-left: 7rem;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 2em;
+
+}
+section.about h1 span{
+    color: var(--primary);
+
+}
+section.about h3
+{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+section.expskill
+{
+    background: lightgray;
+}
+.exphead
+{
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+    font-size:2rem ;
+}
+.exphead +p
+{
+    color: darkcyan ;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+    font-size: 2rem ;
+    font-weight: 400;
+}
+.skillhead
+{
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+    font-size: 2rem ;
+}
+.skillhead +p2
+{
+    color: darkcyan;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 6rem;
+    margin-left: 5em;
+    font-size:1rem ;
+    font-weight: 500;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+.sectionheading
+{
+    color: var(--pure);
+    text-align: center;
+    margin-bottom: 6rem;
+    line-height: 0.5;
+    font-size: 2rem;
+}
+section.Project
+{
+    background: black;
+    clip-path:polygon(0 0,100% 0,100% 100%,70% 80%,0 100%);
+}
+section.Project .cardwrapper
+{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-column-gap:2rem;
+    margin-left: 1.5em;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+section.Project .cardwrapper .card 
+{
+    position: relative;
+    height: 250px;   
+    
+}
+section.Project .cardwrapper .card  .overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .4s ease;
+}
+section.Project .cardwrapper .card:hover .overlay
+{
+    opacity: 1;
+}
+section.Project .cardwrapper .card  .overlay a
+{
+    color: var(--dark);
+    text-decoration: none;
+}
+section.Project .cardwrapper .card  img
+{
+    height: 100%;
+    width: 100%;
+}
+.section-heading 
+{
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 0.5;
+    font-size: 2rem;
+}
+.section-heading span
+{
+    color: var(--primary);
+}
+.section-heading +p
+{
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 6rem;
+    line-height: 0.l5;
+    font-size: 2rem;
+}
+section.contact .cardwrapper
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+section.contact .inputdetails
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:2rem;
+    margin-bottom: 2rem;
+}
+section.contact .inputdetail2
+{
+    display: flex;
+    flex-direction: column;
+}
+section.contact .inputdetail2 textarea
+{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+}
+section.contact .inputdetail2 input{
+    margin-bottom: 2rem;
+    border: 1px solid var(--light);
+    
+}
+section.contact input
+{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+}
+
+section.contact .button
+{
+    text-align: center;
+    margin-top: 2rem;
+} 
